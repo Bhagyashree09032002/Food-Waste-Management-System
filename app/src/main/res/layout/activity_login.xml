@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.ne.foodneed.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select user type"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutUsertype"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/btnSelectNGO"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:text="NGO"
+                android:textSize="16sp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/btnSelectHotel"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:text="Hotel"
+                android:textSize="16sp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/btnSelectUser"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:text="User"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/editUserNameLogin"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/small_user"
+            android:drawablePadding="10dp"
+            android:paddingLeft="15dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:textColor="@android:color/black"
+            android:hint="Mobile Number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/editPasswordLogin"
+            android:background="@drawable/button"
+            android:maxLength="20"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:drawablePadding="5dp"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:hint="Password"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/btnLogin"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button1"
+                android:text="SIGN IN"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/btnRegister"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button1"
+                android:text="SIGN UP"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

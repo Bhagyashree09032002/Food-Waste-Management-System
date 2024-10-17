@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="20dp"
+    tools:context="com.example.ne.foodneed.NgoHomepage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Information of food allocated to you:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No food allocated yet"
+            android:id="@+id/textFoodAllocatedInfo"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/btnFoodNavigation"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button1"
+            android:text="Show Navigation to Food Location"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/btnFoodPickedup"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+            android:text="Food Picked Up"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/btnFoodDelivered"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+            android:text="Food Delivered"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

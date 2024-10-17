@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.ne.foodneed.HotelHomepage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:background="#f6ed0f94">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnHotelDonateFood"
+            android:text="Donate"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/whitebackground"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnHotelTrack"
+            android:text="Track"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select food:"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rice"
+                        android:layout_weight="1"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editRiceQuantity"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:background="@drawable/button"
+                        android:hint="0 Kg"
+                        android:textColor="@android:color/black"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:maxLength="4"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sabji / Dal"
+                        android:layout_weight="1"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editSabjiQuantity"
+                        android:maxLines="1"
+                        android:background="@drawable/button"
+                        android:hint="0 Kg"
+                        android:textSize="16sp"
+                        android:inputType="number"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:maxLength="4"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chapatis / Rotis"
+                        android:layout_weight="1"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editChapatiNo"
+                        android:maxLines="1"
+                        android:background="@drawable/button"
+                        android:hint="0 Nos"
+                        android:textSize="16sp"
+                        android:inputType="number"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:maxLength="4"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter other food description below:"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/editFoodDescription"
+                    android:background="@drawable/button"
+                    android:hint="Description"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:textSize="16sp"
+                    android:maxLength="200"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Provide food location:"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.18"
+                    android:scrollbars="vertical"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/textSelectedLocationAddress"
+                    android:textSize="18sp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/selectLocationMap"
+                    android:layout_marginLeft="5dp"
+                    android:elevation="4dp"
+                    android:translationZ="2dp"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/smalllocationmap"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/btnSubmitFoodDetails"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:elevation="3dp"
+                android:translationZ="2dp"
+                android:background="@drawable/button1"
+                android:text="Send Details"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

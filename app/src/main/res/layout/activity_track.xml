@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ne.foodneed.Track">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:background="#f6ed0f94">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnHomepageDonateFood"
+            android:text="Donate"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnHomepageTrack"
+            android:text="Track"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:background="@drawable/whitebackground"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnHomepageEditProfile"
+            android:text="Edit Profile"
+            android:elevation="2dp"
+            android:layout_weight="1"
+            android:translationZ="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:map="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapTrack"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="main.com.sensorapp.AddLocation" />
+
+                <com.example.ne.foodneed.StepView
+                    android:id="@+id/stepViewBar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mapbackground"
+                    android:padding="16dp"
+                    app:sv_animationType="All"
+                    app:sv_stepPadding="12dp"
+                    app:sv_stepsNumber="3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/textFoodStatus"
+                    android:text="No recent donation to track!"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/mapbackground"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

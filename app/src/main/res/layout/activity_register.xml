@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.ne.foodneed.Register">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Provide details for registration!"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:inputType="textPersonName"
+                android:id="@+id/editRegUsername"
+                android:background="@drawable/button"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:id="@+id/editRegEmail"
+                android:inputType="textEmailAddress"
+                android:hint="Email"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:id="@+id/editRegMobile"
+                android:inputType="phone"
+                android:hint="Mobile"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:hint="Aadhaar No"
+                android:background="@drawable/button"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:id="@+id/editAadhaarNo"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/editRegPassword"
+                android:maxLines="1"
+                android:maxLength="10"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:id="@+id/editRegConfirmPassword"
+                android:maxLines="1"
+                android:maxLength="10"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/btnRegisterDone"
+                android:background="@drawable/button1"
+                android:layout_marginTop="15dp"
+                android:text="Register"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "263119846883",
+    "firebase_url": "https://food-need.firebaseio.com",
+    "project_id": "food-need",
+    "storage_bucket": "food-need.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263119846883:android:ac605156184aa6b5",
+        "android_client_info": {
+          "package_name": "com.example.ne.foodneed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263119846883-8g2tmpjuchkr11fsqes3p39i1t6i665n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSqiAgGW-QIk70ArtPzSVfeN2Btztwp9c"
+        },
+        {
+          "current_key": "AIzaSyBSqiAgGW-QIk70ArtPzSVfeN2Btztwp9c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
